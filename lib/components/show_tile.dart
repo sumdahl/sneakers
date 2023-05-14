@@ -18,6 +18,7 @@ class ShoeTile extends StatelessWidget {
         borderRadius: BorderRadius.circular(12.0),
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           //show pics
           ClipRRect(
@@ -28,21 +29,59 @@ class ShoeTile extends StatelessWidget {
           //description
           Text(
             shoe.description,
-            style: TextStyle(color: Colors.grey[500]),
+            style: TextStyle(
+              color: Colors.grey[700],
+              fontSize: 16,
+            ),
           ),
 
           //prices + details
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Column(
-                children: [
-                  //show name
-                  Text(shoe.name),
+              Padding(
+                padding: const EdgeInsets.only(left: 24.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    //show name
+                    Text(
+                      shoe.name,
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 8.0,
+                    ),
+                    //price
+                    Text(
+                      "\$ ${shoe.price}",
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey,
+                      ),
+                    ),
 
-                  //price
-                  Text(shoe.price),
-                ],
-              )
+                    //plus button
+                  ],
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(24.0),
+                decoration: const BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(12.0),
+                      bottomRight: Radius.circular(12.0)),
+                ),
+                child: const Icon(
+                  Icons.add,
+                  color: Colors.white,
+                ),
+              ),
             ],
           )
           //button to add to cart

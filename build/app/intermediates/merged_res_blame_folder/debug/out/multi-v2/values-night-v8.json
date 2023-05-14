@@ -4,7 +4,7 @@
             "outputFile": "com.example.sneakers_shops.app-mergeDebugResources-9:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/sumdahl/flutter-projects/sneakers_shops/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/home/sumdahl/flutter-projects/sneakers/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

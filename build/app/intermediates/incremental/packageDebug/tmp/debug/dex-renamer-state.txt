@@ -1,4 +1,4 @@
-#Thu May 11 14:09:40 NPT 2023
-base.0=/home/sumdahl/flutter-projects/sneakers_shops/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-renamed.0=classes.dex
+#Sat May 13 17:06:11 NPT 2023
+base.0=/home/sumdahl/flutter-projects/sneakers/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
+renamed.0=classes.dex

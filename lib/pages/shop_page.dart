@@ -22,9 +22,9 @@ class _ShopPageState extends State<ShopPage> {
             color: Colors.grey[200],
             borderRadius: BorderRadius.circular(12.0),
           ),
-          child: Row(
+          child: const Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: const [
+            children: [
               Text(
                 "Search",
                 style: TextStyle(color: Colors.grey),
@@ -46,12 +46,12 @@ class _ShopPageState extends State<ShopPage> {
           ),
         ),
         //hot picks
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24.0),
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 24.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.end,
-            children: const [
+            children: [
               Text(
                 "Hot Picks🔥",
                 style: TextStyle(
@@ -85,6 +85,16 @@ class _ShopPageState extends State<ShopPage> {
             },
           ),
         ),
+        const Padding(
+          padding: EdgeInsets.only(top: 25.0, left: 14.0, right: 14.0),
+          child: Divider(
+            thickness: 1.0,
+            color: Colors.white,
+          ),
+        ),
+        const SizedBox(
+          height: 15,
+        )
       ],
     );
   }

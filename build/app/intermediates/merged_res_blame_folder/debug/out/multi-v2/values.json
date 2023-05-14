@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "/home/sumdahl/flutter-projects/sneakers_shops/android/app/src/main/res/values/styles.xml",
+                    "source": "/home/sumdahl/flutter-projects/sneakers/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

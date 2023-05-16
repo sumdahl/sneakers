@@ -1,4 +1,4 @@
-#Sat May 13 17:06:11 NPT 2023
+#Tue May 16 08:32:45 NPT 2023
 base.0=/home/sumdahl/flutter-projects/sneakers/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

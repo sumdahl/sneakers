@@ -3,7 +3,12 @@ import 'package:sneakers_shops/models/shoe.dart';
 
 class ShoeTile extends StatelessWidget {
   final Shoe shoe;
-  const ShoeTile({super.key, required this.shoe});
+  final void Function()? onTap;
+  const ShoeTile({
+    super.key,
+    required this.shoe,
+    required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -27,11 +32,14 @@ class ShoeTile extends StatelessWidget {
           ),
 
           //description
-          Text(
-            shoe.description,
-            style: TextStyle(
-              color: Colors.grey[700],
-              fontSize: 16,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24.0),
+            child: Text(
+              shoe.description,
+              style: TextStyle(
+                color: Colors.grey[700],
+                fontSize: 16,
+              ),
             ),
           ),
 
@@ -69,17 +77,20 @@ class ShoeTile extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
-                padding: const EdgeInsets.all(24.0),
-                decoration: const BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(12.0),
-                      bottomRight: Radius.circular(12.0)),
-                ),
-                child: const Icon(
-                  Icons.add,
-                  color: Colors.white,
+              GestureDetector(
+                onTap: onTap,
+                child: Container(
+                  padding: const EdgeInsets.all(24.0),
+                  decoration: const BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(12.0),
+                        bottomRight: Radius.circular(12.0)),
+                  ),
+                  child: const Icon(
+                    Icons.add,
+                    color: Colors.white,
+                  ),
                 ),
               ),
             ],

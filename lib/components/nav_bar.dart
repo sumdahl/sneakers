@@ -9,7 +9,7 @@ class MyBottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return GNav(
       mainAxisAlignment: MainAxisAlignment.center,
-      gap: 4.0,
+      gap: 8.0,
       activeColor: Colors.grey.shade700,
       tabActiveBorder: Border.all(color: Colors.white),
       tabBackgroundColor: Colors.grey.shade100,
